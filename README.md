@@ -1,3 +1,1 @@
-this is a wireless-order for baidu nuomi
-1.首先确定点餐用到的是左右分屏的视图，左边是功能菜单，右边是功能菜单详情。这样便要使用UISplitViewController视图控制器来创建
-左右分屏要使用横屏在info.plist里面删除掉Supported interface orientations 里面的portrait就是可以一直保持屏幕横屏了
+wireless-order
