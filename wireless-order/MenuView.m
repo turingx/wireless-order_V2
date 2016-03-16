@@ -25,6 +25,8 @@ static NSString *cid = @"cid";
         
         self.util = [DBUtil getIntance];
         self.datasource = [self.util queryMenu];
+        
+        
         [self.collectionView reloadData];
                      
         return self;
@@ -60,10 +62,35 @@ static NSString *cid = @"cid";
     [self addSubview:self.collectionView];  //这里使用slef而不使用self.view的原因是Menu本来就是一个视图
 
     
-    self.seg = [[UISegmentedControl alloc]initWithItems:@[@"热菜", @"凉菜", @"主食", @"酒水"]];
+    self.menuTypeDatasource = [NSMutableArray arrayWithCapacity:10];
+    self.menuTypeDatasource = [self.util queryMenuType];
+    
+
+   
+    NSMutableArray *temp = [NSMutableArray arrayWithCapacity:10];
+    [temp removeAllObjects];
+    for (MenuType *mt in self.menuTypeDatasource) {
+        [temp addObject:mt.name];
+    }
+    
+    
+    self.seg = [[UISegmentedControl alloc]initWithItems:temp];
     self.seg.frame = CGRectMake(100, 50, 400, 30);
+    
+    [self.seg addTarget:self action:@selector(change:) forControlEvents:UIControlEventValueChanged];
+    
     [self addSubview:self.seg];
     
+}
+
+-(void)change:(UISegmentedControl *)sender{
+    
+    long index = sender.selectedSegmentIndex;
+    MenuType *mt = [self.menuTypeDatasource objectAtIndex:index];
+    self.datasource = [self.util queryMenuById:mt.objectId];
+    [self.collectionView reloadData];
+    
+
 }
 
 

@@ -8,9 +8,9 @@
 
 #import <BmobSDK/Bmob.h>
 
-@interface Menu : Bmob
+@interface Menu : BmobObject
 
-@property(nonatomic, copy)NSString *objectid;
+//@property(nonatomic, copy)NSString *objectid;
 @property(nonatomic, copy)NSString *name;
 @property(nonatomic, assign)float price;
 @property(nonatomic, copy)NSString *tid; //分类id

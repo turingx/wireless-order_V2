@@ -74,7 +74,7 @@ static DBUtil * instance = nil;  //静态实例实现单例设计模式
 
     [self open];
     NSString *sql = @"insert into MenuTypeTbl(objectid, name)values(?,?)";
-    BOOL r = [self.db executeUpdate:sql, mt.objectid, mt.name];
+    BOOL r = [self.db executeUpdate:sql, mt.objectId, mt.name];
     if (r) {
         NSLog(@"添加菜单分类成功！");
     }else{
@@ -96,7 +96,7 @@ static DBUtil * instance = nil;  //静态实例实现单例设计模式
 
     [self open];
     NSString *sql = @"insert into MenuTbl(objectid, name, price, tid, pic_path,  description)values(?, ?, ?, ?, ?, ?)";
-    BOOL r1 =  [self.db executeUpdate:sql, m.objectid, m.name, [NSNumber numberWithFloat:m.price], m.tid, m.picture_path, m.desc];
+    BOOL r1 =  [self.db executeUpdate:sql, m.objectId, m.name, [NSNumber numberWithFloat:m.price], m.tid, m.picture_path, m.desc];
     if (r1) {
         NSLog(@"添加菜单成功！");
     }else{
@@ -134,7 +134,7 @@ static DBUtil * instance = nil;  //静态实例实现单例设计模式
         NSString *description = [s stringForColumn:@"description"];
         
         Menu *m = [[Menu alloc] init];
-        m.objectid = objectid;
+        m.objectId = objectid;
         m.name = name;
         m.picture_path = pic_path;
         m.price = price;
@@ -168,7 +168,7 @@ static DBUtil * instance = nil;  //静态实例实现单例设计模式
         NSString *description = [s stringForColumn:@"description"];
         
         Menu *m = [[Menu alloc] init];
-        m.objectid = objectid;
+        m.objectId = objectid;
         m.name = name;
         m.picture_path = pic_path;
         m.price = price;
@@ -195,8 +195,8 @@ static DBUtil * instance = nil;  //静态实例实现单例设计模式
         NSString *objectid = [s stringForColumn:@"objectid"];
         NSString *name = [s stringForColumn:@"name"];
        
-        Menu *m = [[Menu alloc] init];
-        m.objectid = objectid;
+        MenuType *m = [[MenuType alloc] init];
+        m.objectId = objectid;
         m.name = name;
 
         [temp addObject:m];

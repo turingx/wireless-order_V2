@@ -22,6 +22,8 @@
 
 @property(nonatomic, strong)UISegmentedControl *seg;
 
+@property(nonatomic,strong)NSMutableArray *menuTypeDatasource;
+
 
 
 

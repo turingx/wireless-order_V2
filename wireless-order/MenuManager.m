@@ -43,7 +43,7 @@
             NSString *url = file.url;
             
             Menu *m = [[Menu alloc] init];
-            m.objectid = objectId;
+            m.objectId = objectId;
             m.name = name;
             m.price = [price floatValue];
             m.tid = tid;
@@ -81,7 +81,7 @@
 //            NSLog(@"objectId = %@", [obj objectId]);
             
             MenuType *mt = [[MenuType alloc] init];
-            mt.objectid = objectId;
+            mt.objectId = objectId;
             mt.name = name;
             
       [self.util addMenuType:mt];

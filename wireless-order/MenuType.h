@@ -8,9 +8,9 @@
 
 #import <BmobSDK/Bmob.h>
 
-@interface MenuType : Bmob
+@interface MenuType : BmobObject
 
-@property(nonatomic, copy)NSString *objectid;
+//@property(nonatomic, copy)NSString *objectid;
 @property(nonatomic, copy)NSString *name;
 
 @end

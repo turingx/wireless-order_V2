@@ -22,7 +22,7 @@
     return nil;
 }
 
-//haha
+
 -(void)prepareViews{
     
     self.pictureImageView = [[UIImageView alloc] init];
