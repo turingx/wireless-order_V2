@@ -47,6 +47,7 @@
 		C84825181C783E5B00A10ACA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C84825171C783E5B00A10ACA /* libsqlite3.tbd */; };
 		C848251E1C784B3600A10ACA /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C848251D1C784B3600A10ACA /* MasterViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C84825211C784B5700A10ACA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84825201C784B5700A10ACA /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C87420641C85CB4B00DC40B7 /* MenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		C88319761C7F0017003B8A44 /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C88319751C7F0017003B8A44 /* DBUtil.m */; settings = {ASSET_TAGS = (); }; };
 		C8BE99001C798A9B00EAEE52 /* MenuType.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE98FF1C798A9B00EAEE52 /* MenuType.m */; settings = {ASSET_TAGS = (); }; };
 		C8BE99031C798B2800EAEE52 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE99021C798B2800EAEE52 /* Menu.m */; settings = {ASSET_TAGS = (); }; };
@@ -140,6 +141,8 @@
 		C848251F1C784B5700A10ACA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		C84825201C784B5700A10ACA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C84825221C78548200A10ACA /* constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = constant.h; path = ../constant.h; sourceTree = "<group>"; };
+		C87420621C85CB4B00DC40B7 /* MenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCollectionViewCell.h; sourceTree = "<group>"; };
+		C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCollectionViewCell.m; sourceTree = "<group>"; };
 		C88319741C7F0017003B8A44 /* DBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtil.h; sourceTree = "<group>"; };
 		C88319751C7F0017003B8A44 /* DBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtil.m; sourceTree = "<group>"; };
 		C8BE98FE1C798A9B00EAEE52 /* MenuType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuType.h; sourceTree = "<group>"; };
@@ -344,6 +347,8 @@
 				C81B24151C7878F500C44EA2 /* SyncDataView.m */,
 				C81B24171C787A5100C44EA2 /* SettingView.h */,
 				C81B24181C787A5100C44EA2 /* SettingView.m */,
+				C87420621C85CB4B00DC40B7 /* MenuCollectionViewCell.h */,
+				C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -507,6 +512,7 @@
 				C81B24101C7878AF00C44EA2 /* TableView.m in Sources */,
 				C88319761C7F0017003B8A44 /* DBUtil.m in Sources */,
 				C81B24161C7878F500C44EA2 /* SyncDataView.m in Sources */,
+				C87420641C85CB4B00DC40B7 /* MenuCollectionViewCell.m in Sources */,
 				C848251E1C784B3600A10ACA /* MasterViewController.m in Sources */,
 				C84824FF1C783BB800A10ACA /* AFNetworkReachabilityManager.m in Sources */,
 				C84824BF1C7837F200A10ACA /* main.m in Sources */,
