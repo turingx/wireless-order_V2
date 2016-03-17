@@ -60,10 +60,6 @@
     self.orderBtn.backgroundColor = [UIColor redColor];
     [self.contentView addSubview:self.orderBtn];
     
-    
-                    
-    
-
 }
 
 

@@ -32,7 +32,7 @@
         
         // self.backgroundColor = [UIColor purpleColor];
         
-        self.tv = [[UITableView alloc] initWithFrame:CGRectMake(0, 10, self.frame.size.width, self.frame.size.height)];
+        self.tv = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
         
         // self.dataSource = [NSArray arrayWithObjects:@"同步菜单", @"同步菜单分类", nil];
         self.dataSource = @[@"同步菜单分类", @"同步菜单"];

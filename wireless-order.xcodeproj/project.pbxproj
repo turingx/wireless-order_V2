@@ -51,6 +51,8 @@
 		C84A94671C9A80640029D0E4 /* OrderMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A94661C9A80640029D0E4 /* OrderMenu.m */; settings = {ASSET_TAGS = (); }; };
 		C87420641C85CB4B00DC40B7 /* MenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		C88319761C7F0017003B8A44 /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C88319751C7F0017003B8A44 /* DBUtil.m */; settings = {ASSET_TAGS = (); }; };
+		C8A2A1DB1C9AEEC8006F18E5 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A2A1DA1C9AEEC8006F18E5 /* MenuListViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C8A2A1DE1C9B24C3006F18E5 /* orderListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A2A1DD1C9B24C3006F18E5 /* orderListTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		C8BE99001C798A9B00EAEE52 /* MenuType.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE98FF1C798A9B00EAEE52 /* MenuType.m */; settings = {ASSET_TAGS = (); }; };
 		C8BE99031C798B2800EAEE52 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE99021C798B2800EAEE52 /* Menu.m */; settings = {ASSET_TAGS = (); }; };
 		C8BE99061C798C9600EAEE52 /* MenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE99051C798C9600EAEE52 /* MenuManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -151,6 +153,10 @@
 		C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCollectionViewCell.m; sourceTree = "<group>"; };
 		C88319741C7F0017003B8A44 /* DBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtil.h; sourceTree = "<group>"; };
 		C88319751C7F0017003B8A44 /* DBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtil.m; sourceTree = "<group>"; };
+		C8A2A1D91C9AEEC8006F18E5 /* MenuListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuListViewController.h; sourceTree = "<group>"; };
+		C8A2A1DA1C9AEEC8006F18E5 /* MenuListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuListViewController.m; sourceTree = "<group>"; };
+		C8A2A1DC1C9B24C3006F18E5 /* orderListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orderListTableViewCell.h; sourceTree = "<group>"; };
+		C8A2A1DD1C9B24C3006F18E5 /* orderListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = orderListTableViewCell.m; sourceTree = "<group>"; };
 		C8BE98FE1C798A9B00EAEE52 /* MenuType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuType.h; sourceTree = "<group>"; };
 		C8BE98FF1C798A9B00EAEE52 /* MenuType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuType.m; sourceTree = "<group>"; };
 		C8BE99011C798B2800EAEE52 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
@@ -357,6 +363,8 @@
 				C81B24151C7878F500C44EA2 /* SyncDataView.m */,
 				C81B24171C787A5100C44EA2 /* SettingView.h */,
 				C81B24181C787A5100C44EA2 /* SettingView.m */,
+				C8A2A1DC1C9B24C3006F18E5 /* orderListTableViewCell.h */,
+				C8A2A1DD1C9B24C3006F18E5 /* orderListTableViewCell.m */,
 				C87420621C85CB4B00DC40B7 /* MenuCollectionViewCell.h */,
 				C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */,
 			);
@@ -370,6 +378,8 @@
 				C848251D1C784B3600A10ACA /* MasterViewController.m */,
 				C848251F1C784B5700A10ACA /* DetailViewController.h */,
 				C84825201C784B5700A10ACA /* DetailViewController.m */,
+				C8A2A1D91C9AEEC8006F18E5 /* MenuListViewController.h */,
+				C8A2A1DA1C9AEEC8006F18E5 /* MenuListViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -507,6 +517,7 @@
 			files = (
 				C8BE99061C798C9600EAEE52 /* MenuManager.m in Sources */,
 				C8BE99031C798B2800EAEE52 /* Menu.m in Sources */,
+				C8A2A1DE1C9B24C3006F18E5 /* orderListTableViewCell.m in Sources */,
 				C84825031C783BB800A10ACA /* AFURLSessionManager.m in Sources */,
 				C84825131C783BD600A10ACA /* FMDatabasePool.m in Sources */,
 				C81B24191C787A5100C44EA2 /* SettingView.m in Sources */,
@@ -529,6 +540,7 @@
 				C84824FF1C783BB800A10ACA /* AFNetworkReachabilityManager.m in Sources */,
 				C84824BF1C7837F200A10ACA /* main.m in Sources */,
 				C84825001C783BB800A10ACA /* AFSecurityPolicy.m in Sources */,
+				C8A2A1DB1C9AEEC8006F18E5 /* MenuListViewController.m in Sources */,
 				C84825121C783BD600A10ACA /* FMDatabaseAdditions.m in Sources */,
 				C84825011C783BB800A10ACA /* AFURLRequestSerialization.m in Sources */,
 				C84825021C783BB800A10ACA /* AFURLResponseSerialization.m in Sources */,

@@ -60,6 +60,8 @@
 -(void)initViews{   //初始化主视图菜单栏目跳转视图
     
     self.menuView = [[MenuView alloc] initWithFrame:self.view.frame];
+    self.menuView.detail = self.detail;
+    
     self.tableView = [[TableView alloc] initWithFrame:self.view.frame];
     self.payView = [[PayView alloc] initWithFrame:self.view.frame];
     self.syncDataView = [[SyncDataView alloc] initWithFrame:self.view.frame];

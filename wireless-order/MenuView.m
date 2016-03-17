@@ -87,14 +87,18 @@ static NSString *cid = @"cid";
     //实现BBBadgeBarButton方法
     
     UIButton *customButton = [[UIButton alloc] init];
+    customButton.frame = CGRectMake(20, 20, 20, 20);
+    [customButton addTarget:self action:@selector(show:) forControlEvents:UIControlEventTouchUpInside];
+    [customButton setTitle:@"详情" forState:UIControlStateNormal];
+    
 
     self.barButton = [[BBBadgeBarButtonItem alloc] initWithCustomUIButton:customButton];
 
- //   barButton.badgeValue = @"3";
-    
 
     UIToolbar *tb = [[UIToolbar alloc] initWithFrame:CGRectMake(480, 50, 70, 30)];
     tb.items = @[self.barButton];
+    
+    
    // tb.backgroundColor = [UIColor blackColor];
     [self addSubview:tb];
     
@@ -110,6 +114,15 @@ static NSString *cid = @"cid";
 
 }
 
+-(void)show:(UIButton *)sender{
+
+    NSLog(@"菜单详情...");
+    MenuListViewController *ml = [[MenuListViewController alloc] init];
+    ml.orderDataSource = self.orderMenuDatasource;
+    [self.detail.navigationController pushViewController:ml animated:YES];
+ 
+    
+}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
 
@@ -169,19 +182,24 @@ static NSString *cid = @"cid";
     
     for (OrderMenu *om in self.orderMenuDatasource) {
         if ([om.mid isEqualToString:m.objectId]) {
+            om.num = om.num + 1;
             flag = true;
+            om.total = om.price * om.num;
             break;
         }
+        
     }
     
-    if (flag) {
-        om.num = om.num + 1;
-    }else{
-        om.num = 1;
-    }
-    
-    om.total = om.price * om.num;
+//    if (flag) {
+//        om.num = om.num + 1;
+//    }else{
+//        om.num = 1;
+//    }
+//    
+    om.mid = m.objectId;
     if (!flag) {
+         om.num = 1;
+        om.total = om.price * om.num;
         [self.orderMenuDatasource addObject:om];
     }
 
