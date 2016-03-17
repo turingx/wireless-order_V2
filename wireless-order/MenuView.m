@@ -28,6 +28,9 @@ static NSString *cid = @"cid";
         
         
         [self.collectionView reloadData];
+        
+        
+        self.orderMenuDatasource = [NSMutableArray arrayWithCapacity:10];
                      
         return self;
     }
@@ -74,12 +77,26 @@ static NSString *cid = @"cid";
     }
     
     
-    self.seg = [[UISegmentedControl alloc]initWithItems:temp];
-    self.seg.frame = CGRectMake(100, 50, 400, 30);
+    self.seg = [[UISegmentedControl alloc]initWithItems:@[@"热菜", @"凉菜", @"主食", @"酒水"]];
+    self.seg.frame = CGRectMake(70, 50, 400, 30);
     
     [self.seg addTarget:self action:@selector(change:) forControlEvents:UIControlEventValueChanged];
     
     [self addSubview:self.seg];
+    
+    //实现BBBadgeBarButton方法
+    
+    UIButton *customButton = [[UIButton alloc] init];
+
+    self.barButton = [[BBBadgeBarButtonItem alloc] initWithCustomUIButton:customButton];
+
+ //   barButton.badgeValue = @"3";
+    
+
+    UIToolbar *tb = [[UIToolbar alloc] initWithFrame:CGRectMake(480, 50, 70, 30)];
+    tb.items = @[self.barButton];
+   // tb.backgroundColor = [UIColor blackColor];
+    [self addSubview:tb];
     
 }
 
@@ -115,8 +132,59 @@ static NSString *cid = @"cid";
     
     cell.backgroundColor = [UIColor orangeColor];
     
+     cell.orderBtn.tag = indexPath.row;
+    [cell.orderBtn addTarget:self action:@selector(add:) forControlEvents:UIControlEventTouchUpInside];
+   
     
     return cell;
+}
+
+-(void)add:(UIButton *)sender{
+
+    NSLog(@"下单...");
+    
+    OrderMenu *om = [[OrderMenu alloc] init];
+    long index = sender.tag;
+    
+    Menu *m = [self.datasource objectAtIndex:index];
+    
+    om.mid = m.objectId;
+    om.name = m.name;
+    om.price = m.price;
+    
+    
+    int value;
+    if (self.barButton.badgeValue == nil) {
+        value = 0;
+    }else{
+        
+        value = [self.barButton.badgeValue intValue];
+    }
+    
+    self.barButton.badgeValue = [NSString stringWithFormat:@"%d", ++value];
+    
+    
+    
+    BOOL flag = false;
+    
+    for (OrderMenu *om in self.orderMenuDatasource) {
+        if ([om.mid isEqualToString:m.objectId]) {
+            flag = true;
+            break;
+        }
+    }
+    
+    if (flag) {
+        om.num = om.num + 1;
+    }else{
+        om.num = 1;
+    }
+    
+    om.total = om.price * om.num;
+    if (!flag) {
+        [self.orderMenuDatasource addObject:om];
+    }
+
 }
 
 @end

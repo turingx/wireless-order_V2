@@ -11,6 +11,8 @@
 #import "Menu.h"
 #import "DBUtil.h"
 #import "constant.h"
+#import "BBBadgeBarButtonItem.h"
+#import "OrderMenu.h"
 
 @interface MenuView : UIView<UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -23,6 +25,10 @@
 @property(nonatomic, strong)UISegmentedControl *seg;
 
 @property(nonatomic,strong)NSMutableArray *menuTypeDatasource;
+
+@property(nonatomic, strong)NSMutableArray *orderMenuDatasource;
+
+@property(nonatomic, strong)BBBadgeBarButtonItem *barButton;
 
 
 

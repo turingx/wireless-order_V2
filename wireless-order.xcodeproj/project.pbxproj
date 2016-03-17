@@ -47,6 +47,8 @@
 		C84825181C783E5B00A10ACA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C84825171C783E5B00A10ACA /* libsqlite3.tbd */; };
 		C848251E1C784B3600A10ACA /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C848251D1C784B3600A10ACA /* MasterViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C84825211C784B5700A10ACA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84825201C784B5700A10ACA /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C84A94641C9A5AB60029D0E4 /* BBBadgeBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A94631C9A5AB60029D0E4 /* BBBadgeBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
+		C84A94671C9A80640029D0E4 /* OrderMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A94661C9A80640029D0E4 /* OrderMenu.m */; settings = {ASSET_TAGS = (); }; };
 		C87420641C85CB4B00DC40B7 /* MenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		C88319761C7F0017003B8A44 /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C88319751C7F0017003B8A44 /* DBUtil.m */; settings = {ASSET_TAGS = (); }; };
 		C8BE99001C798A9B00EAEE52 /* MenuType.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE98FF1C798A9B00EAEE52 /* MenuType.m */; settings = {ASSET_TAGS = (); }; };
@@ -141,6 +143,10 @@
 		C848251F1C784B5700A10ACA /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		C84825201C784B5700A10ACA /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C84825221C78548200A10ACA /* constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = constant.h; path = ../constant.h; sourceTree = "<group>"; };
+		C84A94621C9A5AB60029D0E4 /* BBBadgeBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBadgeBarButtonItem.h; sourceTree = "<group>"; };
+		C84A94631C9A5AB60029D0E4 /* BBBadgeBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBadgeBarButtonItem.m; sourceTree = "<group>"; };
+		C84A94651C9A80640029D0E4 /* OrderMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMenu.h; sourceTree = "<group>"; };
+		C84A94661C9A80640029D0E4 /* OrderMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMenu.m; sourceTree = "<group>"; };
 		C87420621C85CB4B00DC40B7 /* MenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCollectionViewCell.h; sourceTree = "<group>"; };
 		C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCollectionViewCell.m; sourceTree = "<group>"; };
 		C88319741C7F0017003B8A44 /* DBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtil.h; sourceTree = "<group>"; };
@@ -194,6 +200,8 @@
 		C81B241A1C78C44700C44EA2 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C84A94621C9A5AB60029D0E4 /* BBBadgeBarButtonItem.h */,
+				C84A94631C9A5AB60029D0E4 /* BBBadgeBarButtonItem.m */,
 				C81B24311C78C54400C44EA2 /* MediaPlayer.framework */,
 				C81B242F1C78C53200C44EA2 /* AVFoundation.framework */,
 				C81B242D1C78C51700C44EA2 /* libicucore.tbd */,
@@ -330,6 +338,8 @@
 				C8BE99021C798B2800EAEE52 /* Menu.m */,
 				C8BE99041C798C9600EAEE52 /* MenuManager.h */,
 				C8BE99051C798C9600EAEE52 /* MenuManager.m */,
+				C84A94651C9A80640029D0E4 /* OrderMenu.h */,
+				C84A94661C9A80640029D0E4 /* OrderMenu.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -502,6 +512,7 @@
 				C81B24191C787A5100C44EA2 /* SettingView.m in Sources */,
 				C81B24131C7878C300C44EA2 /* PayView.m in Sources */,
 				C84825151C783BD600A10ACA /* FMResultSet.m in Sources */,
+				C84A94671C9A80640029D0E4 /* OrderMenu.m in Sources */,
 				C84825211C784B5700A10ACA /* DetailViewController.m in Sources */,
 				C8BE99001C798A9B00EAEE52 /* MenuType.m in Sources */,
 				C84824C51C7837F200A10ACA /* ViewController.m in Sources */,
@@ -512,6 +523,7 @@
 				C81B24101C7878AF00C44EA2 /* TableView.m in Sources */,
 				C88319761C7F0017003B8A44 /* DBUtil.m in Sources */,
 				C81B24161C7878F500C44EA2 /* SyncDataView.m in Sources */,
+				C84A94641C9A5AB60029D0E4 /* BBBadgeBarButtonItem.m in Sources */,
 				C87420641C85CB4B00DC40B7 /* MenuCollectionViewCell.m in Sources */,
 				C848251E1C784B3600A10ACA /* MasterViewController.m in Sources */,
 				C84824FF1C783BB800A10ACA /* AFNetworkReachabilityManager.m in Sources */,
