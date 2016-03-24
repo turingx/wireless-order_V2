@@ -27,9 +27,9 @@
 -(void)prepareViews{
 
     self.imageView = [[UIImageView alloc] init];
-    self.imageView.frame = CGRectMake(101, 10, 10, 10);
+    self.imageView.frame = CGRectMake(10, 10, 150, 120);
     self.numLabel = [[UILabel alloc] init];
-    self.numLabel.frame = CGRectMake(10, 10, 10, 10);
+    self.numLabel.frame = CGRectMake(170, 20, 50, 30);
     
     [self.contentView addSubview:self.numLabel];
     [self.contentView addSubview:self.imageView];

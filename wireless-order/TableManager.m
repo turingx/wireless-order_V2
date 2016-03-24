@@ -54,6 +54,8 @@
 
 
         }
+        
+        [self.delegate notifyAllTables];
     }];
 }
 
@@ -82,6 +84,8 @@
             
             [self.emptyTableList addObject:t];
         }
+        
+        [self.delegate notifyEmptyTables];
     }];
     
 }
@@ -111,6 +115,8 @@
             
             [self.busyTableList addObject:t];
         }
+        
+        [self.delegate notifyBusyTables];
     }];
     
 }

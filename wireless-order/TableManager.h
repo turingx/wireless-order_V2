@@ -10,10 +10,25 @@
 #import <BmobSDK/Bmob.h>
 #import "Table.h"
 
+
+@protocol TableManagerDelegate <NSObject>
+
+
+@optional
+-(void)notifyAllTables;
+-(void)notifyEmptyTables;
+-(void)notifyBusyTables;
+
+
+
+@end
+
 @interface TableManager : UITableViewCell
 
 
 @property(nonatomic, strong)NSMutableArray *allTableList, *emptyTableList, *busyTableList;
+
+@property(nonatomic, strong)id <TableManagerDelegate> delegate;
 
 -(void)queryAllTable;
 -(void)queryEmptyTable;

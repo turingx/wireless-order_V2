@@ -17,10 +17,17 @@
     if (self) {
         
         self.tableManager = [[TableManager alloc] init];
+        self.tableManager.delegate = self;
+        
+        [self prepareViews];
+        
         [self.tableManager queryAllTable];
         
+        self.tableList = [NSMutableArray arrayWithCapacity:10];
+        
+        
         self.backgroundColor = [UIColor redColor];
-        NSLog(@"hello world!");
+        
         return self;
     }
     return nil;
@@ -38,20 +45,54 @@
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     
+    self.collectionView.backgroundColor = [UIColor brownColor];
+    
     [self addSubview:self.collectionView];
     
 }
 
 
+-(void)notifyAllTables{
+    
+    self.tableList = self.tableManager.allTableList;
+    [self.collectionView reloadData];
+    
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
 
-    return 10;
+    return self.tableList.count;
 }
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    TableCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cid" forIndexPath:indexPath];
+    
+    Table *t = [self.tableList objectAtIndex:indexPath.row];
+    
+    if (t.flag == 0) {
+        cell.imageView.image = [UIImage imageNamed:@"meiren.png"];
+    }else{
+         cell.imageView.image = [UIImage imageNamed:@"youren.png"];
+    }
+    
+    cell.numLabel.text = [NSString stringWithFormat:@"%d号桌", t.num];
+    
+    return cell;
+}
 
-    return nil;
+
+-(CGSize)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout*) collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return CGSizeMake(230, 140);
+}
+
+-(UIEdgeInsets)collectionView: (UICollectionView *)collectionView layout:(nonnull UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    
+    
+    return UIEdgeInsetsMake(20, 20, 20, 20);
+    
 }
 
 

@@ -10,13 +10,15 @@
 #import "TableManager.h"
 #import "constant.h"
 #import "TableCollectionViewCell.h"
+#import "Table.h"
 
-@interface TableView : UIView<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface TableView : UIView<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, TableManagerDelegate>
 
 -(instancetype)initWithFrame:(CGRect)frame;
 
 @property(nonatomic, strong)TableManager *tableManager;
 @property(nonatomic, strong)UICollectionView *collectionView;
+@property(nonatomic, strong)NSMutableArray *tableList;
 
 
 @end
