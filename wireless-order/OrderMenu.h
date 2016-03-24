@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrderMenu : UICollectionViewCell
+@interface OrderMenu : NSObject
 
 @property(nonatomic, copy)NSString *mid;
 @property(nonatomic, copy)NSString *name;

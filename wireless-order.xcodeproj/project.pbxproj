@@ -24,6 +24,9 @@
 		C81B242E1C78C51700C44EA2 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B242D1C78C51700C44EA2 /* libicucore.tbd */; };
 		C81B24301C78C53200C44EA2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B242F1C78C53200C44EA2 /* AVFoundation.framework */; };
 		C81B24321C78C54400C44EA2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B24311C78C54400C44EA2 /* MediaPlayer.framework */; };
+		C83CE2A31CA2822300F30E54 /* Table.m in Sources */ = {isa = PBXBuildFile; fileRef = C83CE2A21CA2822300F30E54 /* Table.m */; settings = {ASSET_TAGS = (); }; };
+		C83CE2A91CA2860600F30E54 /* TableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C83CE2A81CA2860600F30E54 /* TableManager.m */; settings = {ASSET_TAGS = (); }; };
+		C83CE2AE1CA2DE8500F30E54 /* TableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C83CE2AD1CA2DE8500F30E54 /* TableCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		C84824BF1C7837F200A10ACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C84824BE1C7837F200A10ACA /* main.m */; };
 		C84824C21C7837F200A10ACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C84824C11C7837F200A10ACA /* AppDelegate.m */; };
 		C84824C51C7837F200A10ACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84824C41C7837F200A10ACA /* ViewController.m */; };
@@ -98,6 +101,12 @@
 		C81B242D1C78C51700C44EA2 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		C81B242F1C78C53200C44EA2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C81B24311C78C54400C44EA2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C83CE2A11CA2822300F30E54 /* Table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Table.h; sourceTree = "<group>"; };
+		C83CE2A21CA2822300F30E54 /* Table.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Table.m; sourceTree = "<group>"; };
+		C83CE2A71CA2860600F30E54 /* TableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableManager.h; sourceTree = "<group>"; };
+		C83CE2A81CA2860600F30E54 /* TableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableManager.m; sourceTree = "<group>"; };
+		C83CE2AC1CA2DE8500F30E54 /* TableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCollectionViewCell.h; sourceTree = "<group>"; };
+		C83CE2AD1CA2DE8500F30E54 /* TableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCollectionViewCell.m; sourceTree = "<group>"; };
 		C84824BA1C7837F200A10ACA /* wireless-order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wireless-order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84824BE1C7837F200A10ACA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C84824C01C7837F200A10ACA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -346,6 +355,10 @@
 				C8BE99051C798C9600EAEE52 /* MenuManager.m */,
 				C84A94651C9A80640029D0E4 /* OrderMenu.h */,
 				C84A94661C9A80640029D0E4 /* OrderMenu.m */,
+				C83CE2A11CA2822300F30E54 /* Table.h */,
+				C83CE2A21CA2822300F30E54 /* Table.m */,
+				C83CE2A71CA2860600F30E54 /* TableManager.h */,
+				C83CE2A81CA2860600F30E54 /* TableManager.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -367,6 +380,8 @@
 				C8A2A1DD1C9B24C3006F18E5 /* orderListTableViewCell.m */,
 				C87420621C85CB4B00DC40B7 /* MenuCollectionViewCell.h */,
 				C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */,
+				C83CE2AC1CA2DE8500F30E54 /* TableCollectionViewCell.h */,
+				C83CE2AD1CA2DE8500F30E54 /* TableCollectionViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -515,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83CE2AE1CA2DE8500F30E54 /* TableCollectionViewCell.m in Sources */,
 				C8BE99061C798C9600EAEE52 /* MenuManager.m in Sources */,
 				C8BE99031C798B2800EAEE52 /* Menu.m in Sources */,
 				C8A2A1DE1C9B24C3006F18E5 /* orderListTableViewCell.m in Sources */,
@@ -525,7 +541,9 @@
 				C84825151C783BD600A10ACA /* FMResultSet.m in Sources */,
 				C84A94671C9A80640029D0E4 /* OrderMenu.m in Sources */,
 				C84825211C784B5700A10ACA /* DetailViewController.m in Sources */,
+				C83CE2A31CA2822300F30E54 /* Table.m in Sources */,
 				C8BE99001C798A9B00EAEE52 /* MenuType.m in Sources */,
+				C83CE2A91CA2860600F30E54 /* TableManager.m in Sources */,
 				C84824C51C7837F200A10ACA /* ViewController.m in Sources */,
 				C81B240D1C78788B00C44EA2 /* MenuView.m in Sources */,
 				C84824C21C7837F200A10ACA /* AppDelegate.m in Sources */,
