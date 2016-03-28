@@ -11,4 +11,8 @@
 
 #define MAX_WIDTH 160
 
+#define USERNAME  @"username"
+#define PASSWORD  @"password"
+#define OBJECTID  @"objectid"
+
 #endif /* constant_h */

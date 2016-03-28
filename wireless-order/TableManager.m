@@ -41,7 +41,7 @@
             NSString *num = [obj objectForKey:@"table_number"];
             NSString  *flag = [obj objectForKey:@"flag"];
             
-            NSLog(@"%@", num);
+        //    NSLog(@"%@", num);
            
             Table *t = [[Table alloc] init];
             

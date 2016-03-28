@@ -103,7 +103,7 @@
         NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
         return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
     } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
-        NSLog(@"File downloaded to: %@", filePath);  //打印文件下载路径
+    //    NSLog(@"File downloaded to: %@", filePath);  //打印文件下载路径
         
         NSString *fileName = [response suggestedFilename];
         m.picture_path = fileName;

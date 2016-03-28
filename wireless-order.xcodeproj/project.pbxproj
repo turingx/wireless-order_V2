@@ -52,6 +52,9 @@
 		C84825211C784B5700A10ACA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84825201C784B5700A10ACA /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		C84A94641C9A5AB60029D0E4 /* BBBadgeBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A94631C9A5AB60029D0E4 /* BBBadgeBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
 		C84A94671C9A80640029D0E4 /* OrderMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C84A94661C9A80640029D0E4 /* OrderMenu.m */; settings = {ASSET_TAGS = (); }; };
+		C8646C6C1CA5B94900CADF51 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = C8646C6B1CA5B94900CADF51 /* Order.m */; settings = {ASSET_TAGS = (); }; };
+		C8646C6F1CA5BA8A00CADF51 /* OrderDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = C8646C6E1CA5BA8A00CADF51 /* OrderDetail.m */; settings = {ASSET_TAGS = (); }; };
+		C8646C721CA5BB6600CADF51 /* OrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8646C711CA5BB6600CADF51 /* OrderManager.m */; settings = {ASSET_TAGS = (); }; };
 		C87420641C85CB4B00DC40B7 /* MenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		C88319761C7F0017003B8A44 /* DBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C88319751C7F0017003B8A44 /* DBUtil.m */; settings = {ASSET_TAGS = (); }; };
 		C8A2A1DB1C9AEEC8006F18E5 /* MenuListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A2A1DA1C9AEEC8006F18E5 /* MenuListViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -61,6 +64,8 @@
 		C8BE99001C798A9B00EAEE52 /* MenuType.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE98FF1C798A9B00EAEE52 /* MenuType.m */; settings = {ASSET_TAGS = (); }; };
 		C8BE99031C798B2800EAEE52 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE99021C798B2800EAEE52 /* Menu.m */; settings = {ASSET_TAGS = (); }; };
 		C8BE99061C798C9600EAEE52 /* MenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BE99051C798C9600EAEE52 /* MenuManager.m */; settings = {ASSET_TAGS = (); }; };
+		C8E777BB1CA456D200CF6C20 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E777BA1CA456D200CF6C20 /* User.m */; settings = {ASSET_TAGS = (); }; };
+		C8E777BE1CA4573700CF6C20 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E777BD1CA4573700CF6C20 /* UserManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +165,12 @@
 		C84A94631C9A5AB60029D0E4 /* BBBadgeBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBadgeBarButtonItem.m; sourceTree = "<group>"; };
 		C84A94651C9A80640029D0E4 /* OrderMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMenu.h; sourceTree = "<group>"; };
 		C84A94661C9A80640029D0E4 /* OrderMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMenu.m; sourceTree = "<group>"; };
+		C8646C6A1CA5B94900CADF51 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		C8646C6B1CA5B94900CADF51 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		C8646C6D1CA5BA8A00CADF51 /* OrderDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetail.h; sourceTree = "<group>"; };
+		C8646C6E1CA5BA8A00CADF51 /* OrderDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetail.m; sourceTree = "<group>"; };
+		C8646C701CA5BB6600CADF51 /* OrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderManager.h; sourceTree = "<group>"; };
+		C8646C711CA5BB6600CADF51 /* OrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderManager.m; sourceTree = "<group>"; };
 		C87420621C85CB4B00DC40B7 /* MenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCollectionViewCell.h; sourceTree = "<group>"; };
 		C87420631C85CB4B00DC40B7 /* MenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCollectionViewCell.m; sourceTree = "<group>"; };
 		C88319741C7F0017003B8A44 /* DBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtil.h; sourceTree = "<group>"; };
@@ -176,6 +187,10 @@
 		C8BE99021C798B2800EAEE52 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		C8BE99041C798C9600EAEE52 /* MenuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuManager.h; sourceTree = "<group>"; };
 		C8BE99051C798C9600EAEE52 /* MenuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuManager.m; sourceTree = "<group>"; };
+		C8E777B91CA456D200CF6C20 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C8E777BA1CA456D200CF6C20 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C8E777BC1CA4573700CF6C20 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		C8E777BD1CA4573700CF6C20 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +380,16 @@
 				C83CE2A21CA2822300F30E54 /* Table.m */,
 				C83CE2A71CA2860600F30E54 /* TableManager.h */,
 				C83CE2A81CA2860600F30E54 /* TableManager.m */,
+				C8E777B91CA456D200CF6C20 /* User.h */,
+				C8E777BA1CA456D200CF6C20 /* User.m */,
+				C8E777BC1CA4573700CF6C20 /* UserManager.h */,
+				C8E777BD1CA4573700CF6C20 /* UserManager.m */,
+				C8646C6A1CA5B94900CADF51 /* Order.h */,
+				C8646C6B1CA5B94900CADF51 /* Order.m */,
+				C8646C6D1CA5BA8A00CADF51 /* OrderDetail.h */,
+				C8646C6E1CA5BA8A00CADF51 /* OrderDetail.m */,
+				C8646C701CA5BB6600CADF51 /* OrderManager.h */,
+				C8646C711CA5BB6600CADF51 /* OrderManager.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -542,6 +567,7 @@
 				C8BE99061C798C9600EAEE52 /* MenuManager.m in Sources */,
 				C8BE99031C798B2800EAEE52 /* Menu.m in Sources */,
 				C8A2A1DE1C9B24C3006F18E5 /* orderListTableViewCell.m in Sources */,
+				C8E777BB1CA456D200CF6C20 /* User.m in Sources */,
 				C84825031C783BB800A10ACA /* AFURLSessionManager.m in Sources */,
 				C84825131C783BD600A10ACA /* FMDatabasePool.m in Sources */,
 				C81B24191C787A5100C44EA2 /* SettingView.m in Sources */,
@@ -553,12 +579,16 @@
 				C8BE99001C798A9B00EAEE52 /* MenuType.m in Sources */,
 				C83CE2A91CA2860600F30E54 /* TableManager.m in Sources */,
 				C84824C51C7837F200A10ACA /* ViewController.m in Sources */,
+				C8646C721CA5BB6600CADF51 /* OrderManager.m in Sources */,
 				C81B240D1C78788B00C44EA2 /* MenuView.m in Sources */,
 				C84824C21C7837F200A10ACA /* AppDelegate.m in Sources */,
+				C8646C6C1CA5B94900CADF51 /* Order.m in Sources */,
 				C84825141C783BD600A10ACA /* FMDatabaseQueue.m in Sources */,
+				C8646C6F1CA5BA8A00CADF51 /* OrderDetail.m in Sources */,
 				C84825111C783BD600A10ACA /* FMDatabase.m in Sources */,
 				C81B24101C7878AF00C44EA2 /* TableView.m in Sources */,
 				C88319761C7F0017003B8A44 /* DBUtil.m in Sources */,
+				C8E777BE1CA4573700CF6C20 /* UserManager.m in Sources */,
 				C81B24161C7878F500C44EA2 /* SyncDataView.m in Sources */,
 				C84A94641C9A5AB60029D0E4 /* BBBadgeBarButtonItem.m in Sources */,
 				C87420641C85CB4B00DC40B7 /* MenuCollectionViewCell.m in Sources */,
